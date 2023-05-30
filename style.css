@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+ font-family: sans-serif;
+ box-sizing: border-box;
+ scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055,#7597de);
+}
+
+
+header{
+    position: absolute;
+    top: 4%;
+    left: 0;
+        width: 100%;
+    padding: 30px 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+
+header .logo{
+    width: 150px;
+    position: absolute;
+    left: 5%;
+}
+
+
+
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+        list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+        text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 20px;
+
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522, transparent);
+    z-index: 1000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#bele{
+    z-index: -10;
+    width: 1500px;
+}
+
+
+section img#moon{
+    mix-blend-mode: screen;
+    z-index: 10;
+}
+section img#mountains_front{
+    z-index: 10;
+}
+#text{
+    position: absolute;
+    right: -350px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+    
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 0.5cm;
+    z-index: 9;
+    transform: translateY(100px);
+}
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+.sec  h2{
+    text-align: center;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec a .folder{
+    margin-left: 400px;
+    background-position: center;
+    align-items: center;
+}
+.sec  .dream{
+    display: flex;
+    flex-direction: row;
+    width: 32.5%;
+}
+.sec  .dream img{
+    width: 100%;
+    padding-left: 50px;
+    border-radius:  5px;
+}
+.btn{
+    align-content: center;
+    margin-left: 625px;
+    padding: 15px 15px 15px 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+.btn a{
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+/*--feature--*/
+
+#feature{
+    
+    width: 100%;
+    padding: 20px 0;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: 25px 20px;
+    font-size: 40px;
+    color: #009688;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+
+}
+.title-text p::after{
+    content: '';
+    width: 65px;
+    height: 35px;
+    background: linear-gradient(#019587,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.title-text h1{
+    font-size: 50px;
+    color: #fff;
+}
+.mbtn{
+    align-content: center;
+    margin: 100px 700px 70px 700px;
+    background: #222;
+    padding: 15px 25px ;
+    border-radius: 5px;
+}
+.mbtn a{
+    color: #fff;
+    font-size: 1.2em;
+    
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
