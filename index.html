@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>3d visual</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+        <header>
+        
+    <a href="index.html"><img src="stars2.png" class="logo"></a>
+    
+    <ul>
+        <li><a href="index.html" class="active" >HOME</a></li>
+        <li><a href="latest.html" >LATEST RELEASE</a></li>
+        <li><a href="2.html" >WALLPAPERS</a></li>
+       
+        <li><a href="features.html" >MORE FEATURES</a></li>
+    </ul>
+   
+</header>
+<section>
+    <img src="nezuko.png" id="bele">
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <h2 id="text">ANIMES</h2>
+    <a href="#" id="btn">Explore</a>
+    <img src="mountains_front.png" id="mountains_front">
+    
+</section>
+<div class="sec" id="sec">
+   <h2>Watch your favourite animes</h2>
+   <a href="latest.html"><img src="folder.png" class="folder"></a>
+   <h2>Download WALLPAPERS</h2>
+   <div class="dream">
+    <img src="demons7.png">
+    <img src="gojou2.png">
+    <img src="onepiece1.jpg">
+   </div>
+   <div class="btn">
+    <a href="2.html" class="load-more">MORE</a> 
+</div>
+<!--features-->
+<section id="feature">
+    <div class="title-text">
+        <p>FEATURES</p>
+        <h1>Watch & Download amv's of your favourite animes</h1>
+        <h2>Upload your Content</h2>
+        <div class="mbtn">
+            <a href="features.html" class="load-more">Check </a>
+            </div>
+    
+    </div>
+
+
+</section>
+<script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+    let header = document.querySelector('header')
+
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        mountains_behind.style.top = value * 0.5 + 'px';
+        mountains_front.style.top = value * 0 + 'px';
+      text.style.marginRight = value * 4 + 'px';  
+      text.style.marginTop = value * 1.5 + 'px';
+      btn.style.marginTop = value * 4 + 'px';
+      header.style.top = value * 1 + 'px';
+
+    })
+    </script>
+</body>
+
+
+
+
+
+
+</html>
